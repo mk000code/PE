@@ -1,0 +1,382 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+/* ===== GLOBAL RESET ===== */
+
+/* ===== APP CONTAINER CENTER ===== */
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ============================= */
+/* BODY */
+/* ============================= */
+body {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* ============================= */
+/* PAGE CENTER */
+/* ============================= */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  padding: 20px;
+}
+
+/* ============================= */
+/* CENTERED CONTENT BOX */
+/* ============================= */
+.app-box {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+header {
+  background: linear-gradient(90deg, #8b0000, #b11226, #8b0000);
+  padding: 25px;
+  margin: 0 auto;
+  border-bottom: 3px solid #ff2c2c;
+  box-shadow: 0 8px 30px rgba(255, 0, 0, 0.45);
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* NAVIGATION */
+/* ============================= */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background: #ff2c2c;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff2c2c;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ============================= */
+/* MAIN CONTENT */
+/* ============================= */
+main {
+  margin: 50px 0;
+  padding: 30px 20px;
+}
+
+main h2 {
+  font-size: 2.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ff2c2c;
+  margin-bottom: 15px;
+}
+
+main p {
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #dddddd;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+footer {
+  background: #0d0d0d;
+  padding: 18px;
+  margin: 0 auto;
+  border-top: 2px solid #ff2c2c;
+  box-shadow: 0 -8px 30px rgba(255, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
+/* ============================= */
+/* BUTTON (OPTIONAL MARVEL TOUCH) */
+/* ============================= */
+button {
+  margin-top: 20px;
+  background: linear-gradient(90deg, #b11226, #ff2c2c);
+  border: none;
+  padding: 12px 28px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(255, 44, 44, 0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(255, 44, 44, 1);
+}
+
+/* ============================= */
+/* RESPONSIVE (MOBILE FRIENDLY) */
+/* ============================= */
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ============================= */
+/* BODY */
+/* ============================= */
+body {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* ============================= */
+/* PAGE CENTER */
+/* ============================= */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  padding: 20px;
+}
+
+/* ============================= */
+/* CENTERED CONTENT BOX */
+/* ============================= */
+.app-box {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+header {
+  background: linear-gradient(90deg, #8b0000, #b11226, #8b0000);
+  padding: 25px;
+  margin: 0 auto;
+  border-bottom: 3px solid #ff2c2c;
+  box-shadow: 0 8px 30px rgba(255, 0, 0, 0.45);
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* NAVIGATION */
+/* ============================= */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background: #ff2c2c;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff2c2c;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ============================= */
+/* MAIN CONTENT */
+/* ============================= */
+main {
+  margin: 50px 0;
+  padding: 30px 20px;
+}
+
+main h2 {
+  font-size: 2.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ff2c2c;
+  margin-bottom: 15px;
+}
+
+main p {
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #dddddd;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+footer {
+  background: #0d0d0d;
+  padding: 18px;
+  margin: 0 auto;
+  border-top: 2px solid #ff2c2c;
+  box-shadow: 0 -8px 30px rgba(255, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
+/* ============================= */
+/* BUTTON (OPTIONAL MARVEL TOUCH) */
+/* ============================= */
+button {
+  margin-top: 20px;
+  background: linear-gradient(90deg, #b11226, #ff2c2c);
+  border: none;
+  padding: 12px 28px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(255, 44, 44, 0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(255, 44, 44, 1);
+}
+
+/* ============================= */
+/* RESPONSIVE (MOBILE FRIENDLY) */
+/* ============================= */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  main h2 {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    gap: 15px;
+  }
+}
