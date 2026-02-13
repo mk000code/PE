@@ -8,12 +8,12 @@ const y = [2025,2026,1990];
 const c={name:"KIET",location:"Ghaziabad",Estb_Year:"2023"};
   return (
     <div className="app-container">
-      <Header
+      {/* <Header
         title="MY WEBSITE"
         menu1="Home"
         menu2="About"
         menu3="Contact"
-      />
+      /> */}
 
       <main>
         <h2>WELCOME TO THE APP</h2>

@@ -1,5 +1,5 @@
-
-
+import { UserCard } from "./UserCard"
+import { Wrapper } from "./Wrapper"
 export function App() {
   const users=[
     {
@@ -17,12 +17,14 @@ export function App() {
   return (
     <div>
    <h1>Users Dashboard</h1>
-   <wrapper title="Users List">
+   <Wrapper title="Users List">
     {
-      users.map((key,index)=>(<UserCard key={index} user={use}/>))
+     users.map((user, index) => (
+  <UserCard key={index} user={user} />
+))
+
     }
-       <UserCard/>
-   </wrapper>
+   </Wrapper>
    </div>
   )
 }
